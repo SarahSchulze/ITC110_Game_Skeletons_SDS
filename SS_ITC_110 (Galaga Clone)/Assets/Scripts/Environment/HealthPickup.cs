@@ -10,7 +10,7 @@ public class HealthPickup : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            characterBrain.health++;
+            characterBrain.health+=10;
             Destroy(this.gameObject);
         }
     }
